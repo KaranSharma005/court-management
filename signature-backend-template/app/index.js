@@ -2,7 +2,7 @@ import path from 'path';
 import express from 'express';
 import session from 'express-session';
 import { RedisStore } from "connect-redis";
-
+import './utilities/signDocument.js'
 import router from './router/index.js';
 import redis from './config/redis.js';
 import cors from 'cors';

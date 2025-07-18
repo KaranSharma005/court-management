@@ -14,6 +14,7 @@
   "dependencies": {
     "@socket.io/redis-adapter": "^8.3.0",
     "bcryptjs": "^3.0.2",
+    "bullmq": "^5.56.4",
     "connect-redis": "^8.0.2",
     "docxtemplater": "^3.65.2",
     "docxtemplater-image-module-free": "^1.1.1",

@@ -4,6 +4,8 @@ import { convertDocToPdf } from "../utilities/preview.js";
 import { docPreview } from "../utilities/preview.js";
 import mongoose from "mongoose";
 import Signature from "../models/signatures.js";
+import path from "path";
+import fs from 'fs';
 
 export const getAll = async (req, res, next) => {
   try {
