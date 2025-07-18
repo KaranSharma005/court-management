@@ -305,7 +305,7 @@ export default function Requests() {
                 return (<>
                 <Flex>
                 <Tag color={statusObj.color}>{label}</Tag>
-                {status == 4 && (<Progress type="circle" size={30} percent={(record?.signCount/record?.data?.length)*100} />)}
+                {status == 4 && (<Progress type="circle" size={30} percent={Math.round((record?.signCount/record?.data?.length)*100)} />)}
                 </Flex>
                 </>)
             },

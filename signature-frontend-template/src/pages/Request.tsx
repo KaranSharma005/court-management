@@ -165,6 +165,7 @@ export default function RequestPage() {
 		const file = info?.file?.originFileObj || info?.file;
 		if (file) {
 			setSelectedFile(file);
+			setFileList([info?.file]);
 		}
 	};
 
@@ -242,6 +243,7 @@ export default function RequestPage() {
 			}));
 
 			setTableData(data);
+			setFileList([])
 		}
 		catch (err) {
 			handleError(err, "Failed to save template");
